@@ -96,6 +96,10 @@ Route::prefix('admin')->group(function () {
     });
 });
 
-//hello
+Route::get('/search/{search}', function ($search) {
+    return $search;
+})->where('search', '.*');
+
+Route::get('/allData', [RoutingController::class, 'getAllData']);
 
 
