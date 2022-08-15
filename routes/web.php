@@ -64,29 +64,29 @@ Route::get('whereParameters/{name}/secondPara/{id}', function ($name, $id) {
 // Global Constraints use in App/RouteServiceProvider.php
 
 // error Method Illuminate\Routing\Route::whereIn does not exist.
-    // Route::get('/names/{collection?}', function ($collection = '') {
+    // Route::get('/names/{thinushan}', function ($collection) {
     //     return $collection;
-    // })->whereIn('collection', ['roy','hii','bye']);
+    // })->whereIn('thinushan', ['roy','hii','bye']);
 
 Route::get('/search/{search}', function ($search) {
     return $search;
 })->where('search', '.*');
 
-//dabut
-    // Route::get('/user/profile', function () {
-    //     //
-    // })->name('profile');
 
-    // Route::get(
-    //     '/user/profile',
-    //     [RoutingController::class, 'printMessage']
-    // )->name('profile');
+Route::get('/user/profile', function () {
+    //
+})->name('profile');
 
-    // // Generating URLs...
-    // $url = route('profile');
+// Route::get(
+//     '/user/profile',
+//     [RoutingController::class, 'printMessage']
+// )->name('profile');
 
-    // // Generating Redirects...
-    // return redirect()->route('profile');
+// Generating URLs...
+// $url = route('profile');
+
+// // Generating Redirects...
+// return redirect()->route('profile');
 
 // middele ware Route dobut
 

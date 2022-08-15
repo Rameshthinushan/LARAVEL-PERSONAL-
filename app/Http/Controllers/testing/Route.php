@@ -13,10 +13,10 @@ class Route extends Controller
     }
 
     public function getAllData(){
-        // foreach (UserTesting::all() as $userTesting) {
-        //     //print_r($userTesting);
-        //     echo $userTesting;
-        // }
+        foreach (UserTesting::all() as $userTesting) {
+            //print_r($userTesting);
+            echo  $userTesting;
+        }
         $userData = UserTesting::where('address', 'jaffna')->first();
         echo $userData;
     }
