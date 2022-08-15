@@ -29,6 +29,10 @@ Route::post('/getRequest', function(Request $request) {
     return $input = $request->all();
 });
 
+Route::get('/getRequest', function(Request $request) {
+    return $input = $request->all();
+});
+
 //Route::redirect('/redirectTest', '/home', 301);
 
 //default Status 301
