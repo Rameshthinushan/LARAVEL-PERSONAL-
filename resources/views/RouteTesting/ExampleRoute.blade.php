@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>{{$name}}</h1>
     <form action="/getRequest" method="post">
     @csrf
         <div class="container">
